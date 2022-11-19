@@ -44,7 +44,7 @@ def main():
             print('\n ----- HAVE A NICE DAY -----\n')
             
             current_date_and_time = datetime.now()
-            print('\n\n\n\n')
+            print('\n')
             print(f'{current_date_and_time: %A %I %M %P}')
             
     except(FileNotFoundError, PermissionError) as error:
