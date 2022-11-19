@@ -29,7 +29,7 @@ def main():
                 
                 sub_total += product_price * value_quantity
                 
-                print(f'{name}:    |{value_quantity}|  ${product_price}')
+                print(f'{name_product}:    |{value_quantity}|  ${product_price}')
             print(" ")
             print(f'Subtotal: ${sub_total:.2f}')
             
