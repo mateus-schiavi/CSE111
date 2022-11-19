@@ -51,7 +51,7 @@ def main():
         print('error found')
         print('Please, try to open another file')
         
-    except ValueError as val_err:
+    except (ValueError) as val_err:
         print('Error found at {val_err}. The value you want must be compoused by numbers. In need of assistance, please call 123-456-789')
         
     except KeyError as key_error:
