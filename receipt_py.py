@@ -5,7 +5,7 @@ from datetime import datetime
 def main():
     try:
         products_list = read_dict('products.csv', 0)
-        print('\n\n----- PYTHONS FUNCTIONS STORE -----\n\n')
+        print("\n----- MY CODE STORE -----\n")
         
         request = {}
         
@@ -41,7 +41,7 @@ def main():
             total_computed = float(total_computed)
             print(f'Total Computed: ${total_computed:.2f}')
             
-            print('\n\n\n ----- HAVE A NICE DAY -----\n\n\n')
+            print('\n ----- HAVE A NICE DAY -----\n')
             
             current_date_and_time = datetime.now()
             print('\n\n\n\n')
