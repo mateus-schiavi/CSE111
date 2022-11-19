@@ -41,14 +41,14 @@ def main():
             total_computed = float(total_computed)
             print(f'Total Computed: ${total_computed:.2f}')
             
-            print{'\n\n\n ----- HAVE A NICE DAY -----\n\n\n'}
+            print('\n\n\n ----- HAVE A NICE DAY -----\n\n\n')
             
             current_date_and_time = datetime.now()
             print('\n\n\n\n')
             print(f'{current_date_and_time: %A %I %M %P}')
             
     except(FileNotFoundError, PermissionError) as error:
-        print(error found)
+        print('error found')
         print('Please, try to open another file')
         
     except ValueError as val_err:
