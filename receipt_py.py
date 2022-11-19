@@ -22,7 +22,7 @@ def main():
                 value_quantity = row[1]
                 value_quantity = float(value_quantity)
                 
-                items_order = products[value]
+                items_order = products_list[value]
                 name_product = items_order[1]
                 product_price = items_order[2]
                 product_price = float(product_price)
