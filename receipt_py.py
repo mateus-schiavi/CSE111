@@ -1,6 +1,6 @@
 import csv
 from datetime import datetime
-
+import random
 
 def main():
     try:
@@ -41,6 +41,26 @@ def main():
             total_computed = float(total_computed)
             print(f'Total Computed: ${total_computed:.2f}')
             
+            print()
+            
+            lucky = input("Would you like to get a discount in your next shopping? Y/N")
+            if lucky == 'y':
+                right_discount = int(input("Guess a number between 1 and 5: "))
+                lucky_number = random.randint(1, 5)
+                
+                if lucky_number == lucky:
+                    print('You got 20 percent of discount in your next shopping')
+                    discount = total * 0.2
+                    total_discount = total - discount
+                    print(f'The final price of your shopping is : {total_discount:.2f}')
+                    
+                else:
+                    print("Try again Later")
+            
+            elif lucky == 'n':
+                print("Thanks for buying with us")
+                    
+            
             print('\n ----- HAVE A NICE DAY -----\n')
             
             current_date_and_time = datetime.now()
@@ -48,14 +68,13 @@ def main():
             print(f'{current_date_and_time: %A %I %M %P}')
             
     except(FileNotFoundError, PermissionError) as error:
-        print('error found')
-        print('Please, try to open another file')
+        print(error)
         
     except (ValueError) as val_err:
-        print('Error found at {val_err}. The value you want must be compoused by numbers. In need of assistance, please call 123-456-789')
+        print(val_err)
         
     except KeyError as key_error:
-        print(f'Error at line {reader.line_num} of {file.name} is formatted incorrecty.')
+        print(key_error)
         
 def read_dict(filename, key_column_index):
     
