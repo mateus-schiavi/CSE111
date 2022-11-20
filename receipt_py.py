@@ -115,4 +115,8 @@ def read_request():
 
 if __name__ == "__main__":
     main()
-            
+
+
+#I'd like to say one thing:
+#I'm in love with Python
+#Thanks for all lessons, beloved teacher.
