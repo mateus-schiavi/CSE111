@@ -57,3 +57,5 @@ ax = fig.add_subplot(111, projection='3d')
 ax.scatter(x, y, z)
 
 plt.show()
+
+pytest.main(["-v", "--tb=line", "-rN", __file__])
