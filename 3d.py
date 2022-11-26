@@ -55,5 +55,3 @@ for s in np.arange(0,n_turns*s_max,.1):
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.scatter(x, y, z)
-
-pytest.main(["-v", "--tb=line", "-rN", __file__])
