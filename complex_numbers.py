@@ -1,7 +1,7 @@
 import math
 from matplotlib.ticker import MultipleLocator
 from matplotlib.patches import Arc
-from matplotlib import plt
+from matplotlib.pyplot import plt
 fig, ax = plt.subplots()
 
 # construindo nosso sistema de coordenadas e limpando o gráfico
