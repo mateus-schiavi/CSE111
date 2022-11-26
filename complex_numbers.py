@@ -2,14 +2,12 @@ import math
 import matplotlib.pyplot as plt
 import numpy as np
 import pytest
+import complex
 def f(x):
-    return x**2+2*x+np.cos(x)
-
-# intervalo de x
-x = np.linspace(-3, 3, 50)
-
-# definicao de y
-y = f(x)
+    x + y
+    
+x = input("Please enter the real number of the equation: ")
+y = input("Please enter the imaginary number of the equation: ")
 
 # plotando a funcao y=f(x)
 a = plt.axes()
