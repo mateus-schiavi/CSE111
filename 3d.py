@@ -8,7 +8,7 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-
+import pytest
 
 def M (M0_, gamma_, Q_, theta_, H_, T0_, alpha_, N0_):
     a = gamma_ / Q_ * (theta_-math.sin(theta_))
