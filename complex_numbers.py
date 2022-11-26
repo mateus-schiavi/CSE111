@@ -17,3 +17,5 @@ a.set_xlabel('x')
 a.set_ylabel('y')
 a.plot(x, y)
 plt.show()
+
+pytest.main(["-v", "--tb=line", "-rN", __file__])
