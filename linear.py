@@ -2,9 +2,7 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 
-x = complex["4","3"]
-y = complex["-1","3"]
-z = complex["2","5"]
-k = x + y + z
+x = complex(2,-3)
+k = x
 plt.plot(k)
 plt.show()
