@@ -8,6 +8,8 @@ def test_number():
     y = data.imag
     
 def test_plot():
+    x = data.real 
+    y = data.imag
     plt.plot(x, y, '-.r*') 
     plt.ylabel('Imaginary') 
     plt.xlabel('Real') 
