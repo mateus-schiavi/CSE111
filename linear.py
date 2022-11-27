@@ -3,7 +3,7 @@ import numpy as np
 import pytest
 
 def test_number():
-    data = np.arange(8) + 1j*np.arange(-4, 4) 
+    data = np.arange(8) + 1j*np.arange(-2, 2) 
     x = data.real 
     y = data.imag 
     plt.plot(x, y, '-.r*') 
