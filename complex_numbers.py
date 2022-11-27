@@ -1,3 +1,4 @@
+import sympy
 from sympy import Symbol, solve, init_printing
 from sympy.plotting import plot
 
