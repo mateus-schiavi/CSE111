@@ -5,7 +5,9 @@ import pytest
 def test_number():
     data = np.arange(8) + 1j*np.arange(2, 10) 
     x = data.real 
-    y = data.imag 
+    y = data.imag
+    
+def test_plot():
     plt.plot(x, y, '-.r*') 
     plt.ylabel('Imaginary') 
     plt.xlabel('Real') 
