@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt 
-import numpy as np 
+import numpy as np
+import pytest
 data = np.arange(8) + 1j*np.arange(-4, 4) 
 x = data.real 
 y = data.imag 
