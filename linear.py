@@ -17,4 +17,3 @@ def test_print():
     else:
         print("Error")
         
-pytest.main(["-v", "--tb=line", "-rN", __file__])
