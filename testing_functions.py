@@ -11,7 +11,7 @@ def test_number():
     plt.xlabel('Real') 
     plt.show()
     
-def second_frame():
+def test_number():
     # make data
     x = np.linspace(0, 10, 100)
     y = 4 + 2 * np.sin(2 * x)
