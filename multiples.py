@@ -4,20 +4,16 @@ import math
 import pytest
 
 def test_function():
-    X = np.arange(0, math.pi*2, 0.05) 
-    Y1 = np.sin(X) 
-    Y2 = np.cos(X) 
-    Y3 = np.tan(X) 
-    Y4 = np.tanh(X) 
-    figure, axis = plt.subplots(2, 2) 
-    axis[0, 0].plot(X, Y1) 
-    axis[0, 0].set_title("Sine Function") 
-    axis[0, 1].plot(X, Y2) 
-    axis[0, 1].set_title("Cosine Function") 
-    axis[1, 0].plot(X, Y3) 
-    axis[1, 0].set_title("Tangent Function") 
-    axis[1, 1].plot(X, Y4) 
-    axis[1, 1].set_title("Tanh Function") 
+    plt.figure(1) # a primeira janela
+    plt.subplot(2,1,1) # o primeiro gráfico na primeira janela
+    plt.plot((1,2,3))
+    plt.subplot(2,1,2) # o segundo gráfico na primeira janela
+    plt.plot((4,5,6))
+
+    plt.figure(2) # uma segunda janelaplt.plot((4,5,6)) # cria o gráfico em subplot(1,1,1) por padrão
+    plt.figure(1) # torna a janela 1 a janela corrente; subplot(2,1,2) ainda é o gráfico corrente
+    plt.subplot(2,1,1) # faz subplot(2,1,1) na janela 1 o gráfico corrente
+    plt.title(u'fácil como 1,2,3') # Título do gráfico 2,1,1
     plt.show()
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
