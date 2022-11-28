@@ -3,7 +3,7 @@ import numpy as np
 import pytest
 
 def test_number():
-    for data in np.arange(8) + 1j*np.arange(2, 10):
+    if data == np.arange(8) + 1j*np.arange(2, 10):
         
         x = data.real 
         y = data.imag
