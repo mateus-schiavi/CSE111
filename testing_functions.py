@@ -10,5 +10,4 @@ def figure_1():
     plt.ylabel('Imaginary') 
     plt.xlabel('Real') 
     plt.show()
-
 pytest.main(["-v", "--tb=line", "-rN", __file__])
