@@ -11,7 +11,7 @@ def test_number():
     plt.xlabel('Real') 
     plt.show()
     
-def test_number():
+def __():
     # make data
     x = np.linspace(0, 10, 100)
     y = 4 + 2 * np.sin(2 * x)
@@ -25,4 +25,5 @@ def test_number():
         ylim=(0, 8), yticks=np.arange(1, 8))
 
     plt.show()
+
 pytest.main(["-v", "--tb=line", "-rN", __file__])
