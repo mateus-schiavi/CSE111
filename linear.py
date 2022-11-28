@@ -10,4 +10,11 @@ def test_number():
     plt.ylabel('Imaginary') 
     plt.xlabel('Real') 
     plt.show()
+    
+def test_print():
+    if plt.show():
+        print("Successful")
+    else:
+        print("Error")
+        
 pytest.main(["-v", "--tb=line", "-rN", __file__])
