@@ -11,7 +11,7 @@ def test_number():
     plt.xlabel('Real') 
 
     
-def __():
+def test_function():
     # make data
     x = np.linspace(0, 10, 100)
     y = 4 + 2 * np.sin(2 * x)
