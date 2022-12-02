@@ -1,6 +1,11 @@
+import matplotlib.pyplot as plt 
+import numpy as np
 import cmath
+import pytest
 
-a = 2 + 3j
-b = complex(1,4)
-
-print(a+b)
+def get_number():
+    a = int(input("Please enter the real number: "))
+    b = int(input("Please enter the imaginary number: "))
+    c = complex(a + b)
+    
+pytest.main(["-v", "--tb=line", "-rN", __file__])
