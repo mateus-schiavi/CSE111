@@ -5,5 +5,6 @@ import pytest
 
 a = int(input("Please enter the real number: "))
 b = int(input("Please enter the imaginary number: "))
-plt.show(complex(a + 1j*b))
+print(complex(a + 1j*b))
+plt.show(a + 1j*b)
 
