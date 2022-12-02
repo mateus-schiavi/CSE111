@@ -3,13 +3,13 @@ import numpy as np
 import pytest
 
 def test_number():
-    data = np.arange(8) + 1j*np.arange(2, 10)
+    data = np.arange(x) + 1j*np.arange(x,y)
     x = data.real 
     y = data.imag
     plt.plot(x, y, '-.r*') 
     plt.ylabel('Imaginary') 
     plt.xlabel('Real') 
-    plt.show()
+
     
 def __():
     # make data
@@ -21,9 +21,8 @@ def __():
 
     ax.plot(x, y, linewidth=2.0)
 
-    ax.set(xlim=(0, 8), xticks=np.arange(1, 8),
-        ylim=(0, 8), yticks=np.arange(1, 8))
+    ax.set(xlim=(x, y), xticks=np.arange(x, y),
+        ylim=(x, y), yticks=np.arange(x, y))
 
-    plt.show()
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
