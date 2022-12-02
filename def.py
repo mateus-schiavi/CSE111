@@ -1,4 +1,6 @@
-def compute(x, y, z):
-    x = 7
-    result = compute (3,2,x)
-    return result;
+import complex
+
+a = 2 + 3j
+b = complex(1,4)
+
+print(a+b)
