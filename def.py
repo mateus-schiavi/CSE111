@@ -5,5 +5,5 @@ import pytest
 
 a = int(input("Please enter the real number: "))
 b = int(input("Please enter the imaginary number: "))
-c = complex(a + b)
+print(complex(a + b*j))
     
