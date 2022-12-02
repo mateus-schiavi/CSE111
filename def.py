@@ -3,9 +3,11 @@ import numpy as np
 import cmath
 import pytest
 
-X = int(input("Please enter the real number: "))
-y = int(input("Please enter the imaginary number: "))
-print(complex(x + 1j*y))
-x = data.real
+a = int(input("Please enter the real number: "))
+b = int(input("Please enter the imaginary number: "))
+print(complex(a + 1j*b))
+x = data.real 
 y = data.imag
 plt.plot(x, y, '-.r*') 
+plt.ylabel('Imaginary') 
+plt.xlabel('Real') 
