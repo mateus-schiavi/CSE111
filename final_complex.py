@@ -26,18 +26,5 @@ def repeat():
         print("The program will now end!")
     else:
         print("Invalid answer.")
-        repeat()
-        
-while running:
-    result = input("Do you love complex numbers? ")
-    if result.lower() == "yes":
-        print("If you love complex numbers, you can be the next Stephen Hawking.")
-        loop = True;
-    elif result.lower() == "no":
-        print("I understand. You're far from being a genious.")
-        result = ("")
-        loop = False;
-    else:
-        print("Please enter yes or no")
-        
+        repeat()        
 main()
