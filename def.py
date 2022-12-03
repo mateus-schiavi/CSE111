@@ -9,7 +9,7 @@ print(complex(x + 1j*y))
 
 
 plt.plot(x,y, '-.r*')
-plt.ylabel('Imaginary') 
 plt.xlabel('Real')
+plt.ylabel('Imaginary') 
 plt.show()
 plt.figure()
