@@ -13,7 +13,7 @@ def main():
     y = int(input("Enter the imaginary part of the equation: "))
     
     z = complex(x+1j*y)
-    print(z)
+    print("The respective formula is {z}")
     
     repeat()
     
@@ -24,7 +24,7 @@ def repeat():
     if answe.lower() == "n":
         print("The program will now end!")
     else:
-        print("Invalid answer. Please answer with y/n")
+        print("Invalid answer.")
         repeat()
         
 while running:
@@ -36,6 +36,6 @@ while running:
         print("I understand. You're far from being a genious.")
         loop = False;
     else:
-        print("Wrong Answer. Please answer with y/n")
+        print("Please enter yes or no")
         
 main()
