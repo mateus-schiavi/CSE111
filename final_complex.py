@@ -20,7 +20,7 @@ def repeat():
     answer = input("Would you like to compute again? ")
     if answer.lower() == "yes":
         main()
-    if answe.lower() == "no":
+    elif answe.lower() == "no":
         print("The program will now end!")
     else:
         print("Invalid answer.")
@@ -31,7 +31,7 @@ while running:
     if result.lower() == "yes":
         print("If you love complex numbers, you can be the next Stephen Hawking.")
         loop = True;
-    if result.lower() == "no":
+    elif result.lower() == "no":
         print("I understand. You're far from being a genious.")
         result = ("")
         loop = False;
