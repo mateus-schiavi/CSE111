@@ -14,6 +14,7 @@ def main():
     plt.plot(x,y,'-r*')
     plt.xlabel('Real')
     plt.ylabel('Imaginary')
+    plt.figure(facecolor='green')
     plt.show()
     
     repeat()
