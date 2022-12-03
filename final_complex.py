@@ -29,7 +29,7 @@ def repeat():
         repeat()        
 main()
 
-#Time—50%: Did you spend at least three hours on your Python program or test functions during the current lesson? Yes
+#Time—50%: Did you spend at least three hours on your Python program or test functions during the current lesson? Yes, and the code above was the best I have done until now.
 #Is your program organized into multiple functions? Yes
 #Does each function in your program perform just one task? Yes, after showing the complex equation, the program asks if the user wants to compute again.
 #Did you complete some significant part of your program during the current week? Yes, the code above is the first part of my project.
