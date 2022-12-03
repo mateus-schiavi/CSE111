@@ -37,3 +37,5 @@ while running:
         loop = False;
     else:
         print("Wrong Answer. Please answer with y/n")
+        
+main()
