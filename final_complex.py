@@ -13,15 +13,14 @@ def main():
     y = int(input("Enter the imaginary part of the equation: "))
     
     z = complex(x+1j*y)
-    print("The respective formula is {z}")
-    
+    print("The respective formula is {z}")   
     repeat()
     
 def repeat():
     answer = input("Would you like to compute again? ")
-    if answer.lower() == "y":
+    if answer.lower() == "yes":
         main()
-    if answe.lower() == "n":
+    if answe.lower() == "no":
         print("The program will now end!")
     else:
         print("Invalid answer.")
@@ -29,11 +28,12 @@ def repeat():
         
 while running:
     result = input("Do you love complex numbers? ")
-    if result.lower() == "y":
+    if result.lower() == "yes":
         print("If you love complex numbers, you can be the next Stephen Hawking.")
         loop = True;
-    if result.lower() == "n":
+    if result.lower() == "no":
         print("I understand. You're far from being a genious.")
+        result = ("")
         loop = False;
     else:
         print("Please enter yes or no")
