@@ -12,7 +12,6 @@ def main():
     x = int(input("Enter the real part of the equation: "))
     y = int(input("Enter the imaginary part of the equation: "))
     plt.plot(x,y,'-r*')
-    x = np.linspace(0, 50)
     plt.xlabel('Real')
     plt.ylabel('Imaginary')
     plt.show()
