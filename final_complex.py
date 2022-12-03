@@ -11,6 +11,7 @@ print("|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|")
 def main():
     x = int(input("Enter the real part of the equation: "))
     y = int(input("Enter the imaginary part of the equation: "))
+    data = np.arange(100) + 1j*np.arange(0,100)
     plt.plot(x,y,'-r*')
     plt.xlabel('Real')
     plt.ylabel('Imaginary')
