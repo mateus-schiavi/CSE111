@@ -27,7 +27,7 @@ def repeat():
         print("Invalid answer. Please answer with y/n")
         repeat()
         
-while running():
+while running:
     result = input("Do you love complex numbers? ")
     if answer.lower() == "y":
         print("If you love complex numbers, you can be the next Stephen Hawking.")
