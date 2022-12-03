@@ -11,9 +11,11 @@ print("|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|")
 def main():
     x = int(input("Enter the real part of the equation: "))
     y = int(input("Enter the imaginary part of the equation: "))
+    plt.plot(x,y,'-r*')
+    plt.xlabel('Real')
+    plt.ylabel('Imaginary')
+    plt.show()
     
-    z = complex(x+1j*y)
-    print("The respective formula is {z}")   
     repeat()
     
 def repeat():
