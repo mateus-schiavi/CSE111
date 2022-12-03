@@ -29,10 +29,10 @@ def repeat():
         
 while running:
     result = input("Do you love complex numbers? ")
-    if answer.lower() == "y":
+    if result.lower() == "y":
         print("If you love complex numbers, you can be the next Stephen Hawking.")
         loop = True;
-    if answer.lower() == "n":
+    if result.lower() == "n":
         print("I understand. You're far from being a genious.")
         loop = False;
     else:
