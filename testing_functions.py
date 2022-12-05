@@ -9,7 +9,7 @@ def test_number():
     plt.plot(x, y, '-.r*') 
     plt.ylabel('Imaginary') 
     plt.xlabel('Real') 
-
+    plt.show()
     
 def test_function():
     # make data
