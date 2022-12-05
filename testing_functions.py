@@ -21,7 +21,7 @@ def test_two():
     plt.show()
 
 def test_complex():
-    data = np.arange(1) + 1j*np.arange(0,1)
+    data = np.arange(8) + 1j*np.arange(-4,4)
     x = data.real
     y = data.imag  
     plt.plot(x,y, '-.r*')
