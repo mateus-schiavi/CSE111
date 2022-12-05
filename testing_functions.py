@@ -13,16 +13,21 @@ def test_number():
     
 def test_function():
     # make data
-    x = np.linspace(0, 10, 100)
-    y = 4 + 2 * np.sin(2 * x)
-
-    # plot
-    fig, ax = plt.subplots()
-
-    ax.plot(x, y, linewidth=2.0)
-
-    ax.set(xlim=(x, y), xticks=np.arange(x, y),
-        ylim=(x, y), yticks=np.arange(x, y))
+    X = np.arange(0, math.pi*2, 0.05) 
+    Y1 = np.sin(X) 
+    Y2 = np.cos(X) 
+    Y3 = np.tan(X) 
+    Y4 = np.tanh(X) 
+    figure, axis = plt.subplots(2, 2) 
+    axis[0, 0].plot(X, Y1) 
+    axis[0, 0].set_title("Sine Function") 
+    axis[0, 1].plot(X, Y2) 
+    axis[0, 1].set_title("Cosine Function") 
+    axis[1, 0].plot(X, Y3) 
+    axis[1, 0].set_title("Tangent Function") 
+    axis[1, 1].plot(X, Y4) 
+    axis[1, 1].set_title("Tanh Function") 
+    plt.show()
 
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
