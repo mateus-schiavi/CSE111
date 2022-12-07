@@ -16,13 +16,13 @@ def main():
     minus = 0
     times = 0
     division = 0
-    if input == sum:
+    if input == "sum":
         print(complex((x + y)+(x1 + y1)))
-    elif input == minus:
+    elif input == "minus":
         print(complex(x + y)-(x1 + y1))
-    elif input == times:
+    elif input == "times":
         print(complex(x + y)*(x1 + y1))
-    elif input == division:
+    elif input == "division":
         print(complex(x + y)/(x1 + y1))
     else:
         print("Try Again, please.")
