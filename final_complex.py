@@ -17,15 +17,15 @@ def main():
     times = 0
     division = 0
     if input == sum:
-        print(complex((x + y) + (x1 + y1)))
+        print(complex((x + y)+(x1 + y1)))
     elif input == minus:
-        print(complex(x + y) - (x1 + y1))
+        print(complex(x + y)-(x1 + y1))
     elif input == times:
         print(complex(x + y)*(x1 + y1))
     elif input == division:
         print(complex(x + y)/(x1 + y1))
     else:
-        print("Error. Please select an Operation")
+        print("Try Again, please.")
 
     repeat()
 def repeat():
