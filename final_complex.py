@@ -17,13 +17,13 @@ def main():
     times = 0
     division = 0
     if z.lower() == "sum":
-        print(complex((x + x1) + (y + y1)))
+        print(complex((x + 1j*y) + (x1 + 1j*y1)))
     elif z.lower() == "minus":
-        print(complex(x + x1) - (y + y1))
+        print(complex(x + 1j*y)-(x1 + 1j*y1))
     elif z.lower() == "times":
-        print(complex(x + x1) * (y + y1))
+        print(complex(x + 1j*y)*(x1 + 1j*y1))
     elif z.lower() == "division":
-        print(complex(x + x1) / (y + y1))
+        print(complex(x + 1j*y)/(x1 + 1j*y1))
     else:
         print("Try Again, please.")
 
