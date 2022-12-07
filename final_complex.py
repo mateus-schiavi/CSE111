@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pytest
 import cmath
-
+from matplotlib import quiver, axes
 running = True;
 
 print("WELCOME TO COMPLEX NUMBERS CALCULATOR")
@@ -16,7 +16,7 @@ def main():
     plt.xlabel('Real')
     plt.ylabel('Imaginary')
     plt.show()
-    
+    ax.quiver(0, 0, x.real, y.imag, units='xy', angles='xy', scale=1)
     repeat()
     
 def repeat():
