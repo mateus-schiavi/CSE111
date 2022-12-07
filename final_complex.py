@@ -2,8 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pytest
 import cmath
-from matplotlib import quiver, axes
-running = True;
 
 print("WELCOME TO COMPLEX NUMBERS CALCULATOR")
 print("|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|")
@@ -11,13 +9,25 @@ print("|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|")
 def main():
     x = int(input("Enter the real part of the equation: "))
     y = int(input("Enter the imaginary part of the equation: "))
-    
+    x1 = int(input("Enter the second real part of the equation: "))
+    y1 = int(input("Enter the second imginary part of the equation: "))
+    z = int(input("What kind of operation you want to compute (+,-,*,/)? "))
+    if input == sum:
+        print(complex((x + y) + (x1 + y1)))
+    elif input == minus:
+        print(complex(x + y) - (x1 + y1))
+    elif input == times:
+        print(complex(x + y)*(x1 + y1))
+    elif input == division:
+        print(complex(x + y)/(x1 + y1))
+    else:
+        print("Error. Please select an Operation")
+        
     plt.plot(x,y,'-.r*')
     plt.xlabel('Real')
     plt.ylabel('Imaginary')
     plt.show()
     repeat()
-    
 def repeat():
     answer = input("Would you like to compute again? ")
     if answer.lower() == "yes":
@@ -26,7 +36,7 @@ def repeat():
         print("The program will now end!")
     else:
         print("Invalid answer.")
-        repeat()        
+        repeat()
 main()
 
 #Time—50%: Did you spend at least three hours on your Python program or test functions during the current lesson? Yes, and the code above was the best I have done until now.
