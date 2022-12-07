@@ -13,7 +13,7 @@ def main():
     y = int(input("Enter the imaginary part of the equation: "))
     z = int(input("Enter the angle of the equation: "))
     
-    plt.plot(x,y,z,'-.r*')
+    plt.plot(x,y,'-.r*')
     plt.xlabel('Real')
     plt.ylabel('Imaginary')
     plt.show()
