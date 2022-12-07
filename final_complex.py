@@ -16,7 +16,6 @@ def main():
     plt.xlabel('Real')
     plt.ylabel('Imaginary')
     plt.show()
-    ax.quiver(0, 0, x.real, y.imag, units='xy', angles='xy', scale=1)
     repeat()
     
 def repeat():
