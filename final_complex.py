@@ -11,7 +11,7 @@ def main():
     y = int(input("Enter the imaginary part of the equation: "))
     x1 = int(input("Enter the second real part of the equation: "))
     y1 = int(input("Enter the second imginary part of the equation: "))
-    z = int(input("What kind of operation you want to compute (+,-,*,/)? "))
+    z = (input("What kind of operation you want to compute (+,-,*,/)? "))
     if input == sum:
         print(complex((x + y) + (x1 + y1)))
     elif input == minus:
