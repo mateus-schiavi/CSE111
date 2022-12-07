@@ -11,7 +11,6 @@ print("|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|")
 def main():
     x = int(input("Enter the real part of the equation: "))
     y = int(input("Enter the imaginary part of the equation: "))
-    z = int(input("Enter the angle of the equation: "))
     
     plt.plot(x,y,'-.r*')
     plt.xlabel('Real')
