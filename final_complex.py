@@ -15,6 +15,7 @@ def main():
     plt.plot(x,y,'-.r*')
     plt.xlabel('Real')
     plt.ylabel('Imaginary')
+    fig, ax = plt.subplots(figsize=(6, 6))
     ax.quiver(0, 0, x.real, y.imag, units='xy', angles='xy', scale=1)
     plt.show()
     
