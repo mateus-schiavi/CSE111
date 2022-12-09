@@ -18,11 +18,11 @@ def main():
     if z.lower() == "sum":
         print(complex((x + 1j*y) + (x1 + 1j*y1)))
     elif z.lower() == "minus":
-        print(complex((x + 1j*y)-(x1 + 1j*y1)))
+        print(complex((x + 1j*y) - (x1 + 1j*y1)))
     elif z.lower() == "times":
-        print(complex((x + 1j*y)*(x1 + 1j*y1)))
+        print(complex((x + 1j*y) * (x1 + 1j*y1)))
     elif z.lower() == "division":
-        print(complex((x + 1j*y)/(x1 + 1j*y1)))
+        print(complex((x + 1j*y) / (x1 + 1j*y1)))
     else:
         print("Try Again, please.")
         
@@ -39,23 +39,6 @@ def repeat():
         print("Invalid answer.")
         repeat()
 
-def first_plot():
-    data = np.arange(8) + 1j*np.arange(2, 10)
-    x = data.real 
-    y = data.imag
-    plt.plot(x, y, '-.r*') 
-    plt.ylabel('Imaginary') 
-    plt.xlabel('Real') 
-    plt.show()  
-
-def second_plot():
-    data = np.arange(12) + 1j*np.arange(0,12)
-    x = data.real
-    y = data.imag
-    plt.plot(x,y,'-.r*')
-    plt.ylabel('Imaginary')
-    plt.xlabel('Real')
-    plt.show()
     
 #Time—50%: Did you spend at least three hours on your Python program or test functions during the current lesson? Yes, and the code above was the best I have done until now.
 #Is your program organized into multiple functions? Yes
@@ -83,3 +66,4 @@ def second_plot():
 # 3 is the imaginary number, this happens because j = sqrt(-1).
 
 #In the second part, I'll try to put two complex equations in the same plot.
+#I tried to put two complex equations in the same plot, but, instead of it, I decided to work with math operations (sum, minus, times and division)
