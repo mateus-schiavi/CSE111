@@ -27,6 +27,8 @@ def main():
     else:
         print("Try Again, please.")
 
+    
+    plt.show()
     repeat()
 def repeat():
     answer = input("Would you like to compute again? ")
