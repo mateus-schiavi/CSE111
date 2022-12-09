@@ -27,7 +27,9 @@ def main():
     else:
         print("Try Again, please.")
         
-    plt.plot(x,y)
+    plt.plot(x,y, '-.r*')
+    plt.ylabel('Imaginary') 
+    plt.xlabel('Real') 
     plt.show()
     repeat()
     
