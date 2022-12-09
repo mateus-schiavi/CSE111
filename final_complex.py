@@ -26,6 +26,9 @@ def main():
         print(complex((x + 1j*y)/(x1 + 1j*y1)))
     else:
         print("Try Again, please.")
+        
+    plt.plot(x,y,x1,y1)
+    plt.show()
     repeat()
     
     
