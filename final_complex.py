@@ -27,7 +27,7 @@ def main():
     else:
         print("Try Again, please.")
         
-    plt.plot(x,y,x1,y1)
+    plt.plot(z)
     plt.show()
     repeat()
     
