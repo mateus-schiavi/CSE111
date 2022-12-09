@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pytest
 import cmath
-import pytest
 print("WELCOME TO COMPLEX NUMBERS CALCULATOR")
 print("|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|")
 
@@ -39,8 +38,7 @@ def repeat():
     else:
         print("Invalid answer.")
         repeat()
-
-pytest.main(["-v", "--tb=line", "-rN", __file__])
+main()
 
 #Time—50%: Did you spend at least three hours on your Python program or test functions during the current lesson? Yes, and the code above was the best I have done until now.
 #Is your program organized into multiple functions? Yes
