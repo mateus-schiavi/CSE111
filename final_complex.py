@@ -39,7 +39,24 @@ def repeat():
         print("Invalid answer.")
         repeat()
 
+def first_plot():
+    data = np.arange(8) + 1j*np.arange(2, 10)
+    x = data.real 
+    y = data.imag
+    plt.plot(x, y, '-.r*') 
+    plt.ylabel('Imaginary') 
+    plt.xlabel('Real') 
+    plt.show()  
 
+def second_plot():
+    data = np.arange(12) + 1j*np.arange(0,12)
+    x = data.real
+    y = data.imag
+    plt.plot(x,y,'-.r*')
+    plt.ylabel('Imaginary')
+    plt.xlabel('Real')
+    plt.show()
+    
 #Time—50%: Did you spend at least three hours on your Python program or test functions during the current lesson? Yes, and the code above was the best I have done until now.
 #Is your program organized into multiple functions? Yes
 #Does each function in your program perform just one task? Yes, after showing the complex equation, the program asks if the user wants to compute again.
