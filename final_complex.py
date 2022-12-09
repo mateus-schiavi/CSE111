@@ -42,7 +42,7 @@ main()
 #Is your program organized into multiple functions? Yes
 #Does each function in your program perform just one task? Yes, after showing the complex equation, the program asks if the user wants to compute again.
 #Did you complete some significant part of your program during the current week? Yes, the code above is the first part of my project.
-#A list of the function names in your program: I used the main function and the refeat function, both with def. 
+#A list of the function names in your program: I used the main function and the repeat function, both with def. 
 #A list of the test function names in your test code: I've used the function below:
 #def test_number():
 #    data = np.arange(8) + 1j*np.arange(2, 10)
