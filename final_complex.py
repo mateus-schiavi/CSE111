@@ -19,14 +19,16 @@ def main():
     if z.lower() == "sum":
         print(complex((x + 1j*y) + (x1 + 1j*y1)))
     elif z.lower() == "minus":
-        print(complex(x + 1j*y)-(x1 + 1j*y1))
+        print(complex((x + 1j*y)-(x1 + 1j*y1)))
     elif z.lower() == "times":
-        print(complex(x + 1j*y)*(x1 + 1j*y1))
+        print(complex((x + 1j*y)*(x1 + 1j*y1)))
     elif z.lower() == "division":
-        print(complex(x + 1j*y)/(x1 + 1j*y1))
+        print(complex((x + 1j*y)/(x1 + 1j*y1)))
     else:
         print("Try Again, please.")
     repeat()
+    
+    
 def repeat():
     answer = input("Would you like to compute again? ")
     if answer.lower() == "yes":
