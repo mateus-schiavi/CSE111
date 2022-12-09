@@ -5,7 +5,7 @@ import cmath
 print("WELCOME TO COMPLEX NUMBERS CALCULATOR")
 print("|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|")
 
-def main():
+def test_main():
     x = int(input("Enter the real part of the equation: "))
     y = int(input("Enter the imaginary part of the equation: "))
     x1 = int(input("Enter the second real part of the equation: "))
@@ -29,7 +29,7 @@ def main():
     repeat()
     
     
-def repeat():
+def test_repeat():
     answer = input("Would you like to compute again? ")
     if answer.lower() == "yes":
         main()
@@ -38,7 +38,7 @@ def repeat():
     else:
         print("Invalid answer.")
         repeat()
-main()
+pytest.main(["-v", "--tb=line", "-rN", __file__])
 
 #Time—50%: Did you spend at least three hours on your Python program or test functions during the current lesson? Yes, and the code above was the best I have done until now.
 #Is your program organized into multiple functions? Yes
