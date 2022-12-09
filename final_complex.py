@@ -27,7 +27,7 @@ def main():
     else:
         print("Try Again, please.")
         
-    plt.plot(z)
+    plt.plot(complex)
     plt.show()
     repeat()
     
