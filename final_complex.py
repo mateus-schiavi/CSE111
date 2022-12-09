@@ -10,7 +10,7 @@ def main():
     x = int(input("Enter the real part of the equation: "))
     y = int(input("Enter the imaginary part of the equation: "))
     x1 = int(input("Enter the second real part of the equation: "))
-    y1 = int(input("Enter the second imginary part of the equation: "))
+    y1 = int(input("Enter the second imaginary part of the equation: "))
     z = (input("What kind of operation you want to compute (+,-,*,/)? "))
     sum = 0
     minus = 0
