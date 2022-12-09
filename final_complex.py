@@ -26,9 +26,6 @@ def main():
         print(complex(x + 1j*y)/(x1 + 1j*y1))
     else:
         print("Try Again, please.")
-
-    
-    plt.show()
     repeat()
 def repeat():
     answer = input("Would you like to compute again? ")
