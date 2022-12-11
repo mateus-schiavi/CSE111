@@ -2,9 +2,10 @@ from final_complex import main, repeat
 import pytest
 
 def test_main():
-    assert input == X
+    x = 0
+    assert input == x
     
 def test_repeat():
-    assert repeat == True
+    assert answer == True
     
 pytest.main(["-v", "--tb=line", "-rN", __file__])
