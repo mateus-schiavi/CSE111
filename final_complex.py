@@ -4,7 +4,7 @@ import cmath
 print("WELCOME TO COMPLEX NUMBERS CALCULATOR")
 print("|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|")
 
-def main(val):
+def main():
     x = int(input("Enter the real part of the equation: "))
     y = int(input("Enter the imaginary part of the equation: "))
     x1 = int(input("Enter the second real part of the equation: "))
@@ -39,7 +39,7 @@ def repeat():
         repeat()
         
 if __name__  == "__main__":
-    main(val)
+    main()
     
 #Time—50%: Did you spend at least three hours on your Python program or test functions during the current lesson? Yes, and the code above was the best I have done until now.
 #Is your program organized into multiple functions? Yes
