@@ -2,15 +2,15 @@ import pytest
 from final_complex import main, repeat
 
 def test_main():
-    if input > 0:
+    for _ in range(np.inf):
+        main == input()
+        
         assert main == True
-    else:
-        assert main == False
     
 def test_repeat():
-    if input > 0:
+    for _ in range(2):
+        repeat == input()
+        
         assert repeat == True
-    else:
-        assert repeat == False
     
 pytest.main(["-v", "--tb=line", "-rN", __file__])
