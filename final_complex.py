@@ -4,7 +4,7 @@ import cmath
 print("WELCOME TO COMPLEX NUMBERS CALCULATOR")
 print("|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|")
 
-def main():
+def main(val):
     x = int(input("Enter the real part of the equation: "))
     y = int(input("Enter the imaginary part of the equation: "))
     x1 = int(input("Enter the second real part of the equation: "))
