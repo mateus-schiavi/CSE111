@@ -2,7 +2,7 @@ import pytest
 from final_complex import main, repeat
 
 def test_main():
-    assert main(input) >= 0
+    assert input >= 0
     
 
     
