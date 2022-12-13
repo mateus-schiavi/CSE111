@@ -2,7 +2,9 @@ import pytest
 from final_complex import main, repeat
 
 def test_main():
-    assert main() == 1
+    assert x == 1
+
+
     
 
     
