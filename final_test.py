@@ -3,10 +3,7 @@ import numpy as np
 from final_complex import main, repeat
 
 def test_main():
-    for _ in range(np.inf):
-        main == input()
-        
-        assert main == True
+    assert test_main() == True
     
 
     
