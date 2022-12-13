@@ -2,7 +2,7 @@ import pytest
 from final_complex import main, repeat
 
 def test_main():
-    assert test_main() == True
+    assert main() == True
     
 
     
