@@ -8,10 +8,6 @@ def test_main():
         
         assert main == True
     
-def test_repeat():
-    for _ in range(2):
-        repeat == input()
-        
-        assert repeat == True
+
     
 pytest.main(["-v", "--tb=line", "-rN", __file__])
