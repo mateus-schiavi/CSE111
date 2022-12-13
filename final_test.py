@@ -1,5 +1,4 @@
 import pytest
-import numpy as np
 from final_complex import main, repeat
 
 def test_main():
