@@ -37,8 +37,9 @@ def repeat():
     else:
         print("Invalid answer.")
         repeat()
-
-main()
+        
+if __name__  == "__main__":
+    main()
     
 #Time—50%: Did you spend at least three hours on your Python program or test functions during the current lesson? Yes, and the code above was the best I have done until now.
 #Is your program organized into multiple functions? Yes
