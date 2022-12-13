@@ -31,7 +31,7 @@ def main(val):
 def repeat():
     answer = input("Would you like to compute again? ")
     if answer.lower() == "yes":
-        main()
+        main(val)
     elif answer.lower() == "no":
         print("The program will now end!")
     else:
@@ -39,7 +39,7 @@ def repeat():
         repeat()
         
 if __name__  == "__main__":
-    main()
+    main(val)
     
 #Time—50%: Did you spend at least three hours on your Python program or test functions during the current lesson? Yes, and the code above was the best I have done until now.
 #Is your program organized into multiple functions? Yes
