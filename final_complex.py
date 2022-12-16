@@ -48,15 +48,21 @@ if __name__  == "__main__":
 #A list of the function names in your program: I used the main function and the repeat function, both with def. 
 #A list of the test function names in your test code: I've used the function below:
 #def test_number():
-#    data = np.arange(8) + 1j*np.arange(2, 10)
-#   x = data.real 
-#    y = data.imag
-#   plt.plot(x, y, '-.r*') 
-#    plt.ylabel('Imaginary') 
-#    plt.xlabel('Real') 
-#    plt.show()  
-#pytest.main(["-v", "--tb=line", "-rN", __file__])
+'''   import pytest
+from final_complex import main, repeat
 
+def test_main():
+    assert main
+    
+def test_repeat():
+    assert repeat
+
+
+    
+
+    
+pytest.main(["-v", "--tb=line", "-rN", __file__])
+'''
 #A list of the documentation that you read, the videos that you watched, and the coding experiments that you tried.
 #https://www.geeksforgeeks.org/complex-numbers-in-python-set-1-introduction/#:~:text=An%20complex%20number%20is%20represented,be%20represented%20by%20imag().
 #https://realpython.com/python-complex-numbers/
