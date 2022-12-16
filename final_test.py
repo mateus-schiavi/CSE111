@@ -3,6 +3,9 @@ from final_complex import main, repeat
 
 def test_main():
     assert main
+    
+def test_repeat():
+    assert repeat
 
 
     
