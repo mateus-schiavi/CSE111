@@ -31,7 +31,7 @@ def main():
 def repeat():
     answer = input("Would you like to compute again? ")
     if answer.lower() == "yes":
-        main(val)
+        main()
     elif answer.lower() == "no":
         print("The program will now end!")
     else:
