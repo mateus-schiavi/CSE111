@@ -26,7 +26,7 @@ while running:
     elif shopping.lower() == "n":
         print("Have a nice day!")
         phone_number = ("")
-        loop = True
+        loop = False
     else:
         print("Please enter Y/N.")
 
