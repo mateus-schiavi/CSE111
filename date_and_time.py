@@ -22,11 +22,11 @@ while running:
         print("Please enter a phone number, and we will contact you at a later time:")
         phone_number = input(">> ")
         print("Have a great day!")
-        loop = True
+        loop = False
     elif shopping.lower() == "n":
         print("Have a nice day!")
         phone_number = ("")
-        loop = False
+        loop = True
     else:
         print("Please enter Y/N.")
 
