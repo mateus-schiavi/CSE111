@@ -32,7 +32,7 @@ def repeat():
         print("Error: Invalid Argument")
     
     
-    repeat()
+
 
 while running:
     shopping = input("Would you like to buy tires with these dimensions? (yes/no) ")
