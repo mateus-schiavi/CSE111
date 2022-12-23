@@ -38,7 +38,7 @@ while running:
         print("Please enter a phone number, and we will contact you at a later time:")
         phone_number = input(">> ")
         print("Have a great day!")
-        loop = True
+        loop = False
     elif shopping.lower() == "no":
         print("Have a great day!")
         phone_number = ("")
