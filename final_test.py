@@ -1,12 +1,12 @@
 import pytest
 from final_complex import main, repeat
 
-def test_main():
-    assert main
-    
-def test_repeat():
-    assert repeat
-
+def test_perform_operation():
+    assert perform_operation(1, 2, 3, 4, "sum") == (4 + 6j)
+    assert perform_operation(1, 2, 3, 4, "minus") == (-2 - 2j)
+    assert perform_operation(1, 2, 3, 4, "times") == (-5 + 10j)
+    assert perform_operation(1, 2, 3, 4, "division") == (0.44 + 0.08j)
+    assert perform_operation(1, 2, 3, 4, "invalid") == None
 
     
 
