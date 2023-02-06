@@ -1,12 +1,14 @@
 import pytest
 from final_complex import main, repeat
 
-def test_perform_operation():
-    assert perform_operation(1, 2, 3, 4, "sum") == (4 + 6j)
-    assert perform_operation(1, 2, 3, 4, "minus") == (-2 - 2j)
-    assert perform_operation(1, 2, 3, 4, "times") == (-5 + 10j)
-    assert perform_operation(1, 2, 3, 4, "division") == (0.44 + 0.08j)
-    assert perform_operation(1, 2, 3, 4, "invalid") == None
+def test_main():
+    result = main()
+    assert result == expected_output, f"Expected {expected_output}, but got {result}"
+    
+def test_repeat():
+    result = repeat("Hello", 3)
+    assert result == "HelloHelloHello", f"Expected 'HelloHelloHello', but got {result}"
+
 
     
 
