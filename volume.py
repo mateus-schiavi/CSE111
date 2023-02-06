@@ -30,7 +30,9 @@ def repeat():
         exit()
     else:
         print("Error: Invalid Argument")
-        repeat()
+    
+    
+
 
 while running:
     shopping = input("Would you like to buy tires with these dimensions? (yes/no) ")
@@ -38,7 +40,7 @@ while running:
         print("Please enter a phone number, and we will contact you at a later time:")
         phone_number = input(">> ")
         print("Have a great day!")
-        loop = True
+        loop = False
     elif shopping.lower() == "no":
         print("Have a great day!")
         phone_number = ("")
@@ -48,6 +50,6 @@ while running:
 
 current_date_and_time = datetime.now()
 
-with open("tire_volume.txt", "at") as dimens_file:
-    print(f"\n{current_date_and_time}\n{width_tire}, {aspect_tire}, {diameter_tire}, {volume}\n{phone_number}", file=dimens_file)
+with open("tire_volume.txt", "at") as volume:
+    print(f"\n{current_date_and_time}\n{width_tire}, {aspect_tire}, {diameter_tire}, {volume}\n{phone_number}", file= tire_volume)
 main()
