@@ -11,5 +11,5 @@ def test_perform_operation():
     with pytest.raises(AttributeError):
         perform_operation(1, 2, 3, 4, "invalid")
 
-    
-pytest.main(["-v", "--tb=line", "-rN", __file__])
+if __name__ == '__main__':
+    pytest.main(["-v", "--tb=line", "-rN", __file__])
