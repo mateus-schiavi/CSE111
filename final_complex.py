@@ -1,8 +1,26 @@
 import matplotlib.pyplot as plt 
 import numpy as np
 import cmath
+import pytest
+
 print("WELCOME TO COMPLEX NUMBERS CALCULATOR")
 print("|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|")
+
+def perform_operation(x, y, x1, y1, z):
+    sum = 0
+    minus = 0
+    times = 0
+    division = 0
+    if z.lower() == "sum":
+        return complex((x + 1j*y) + (x1 + 1j*y1))
+    elif z.lower() == "minus":
+        return complex((x + 1j*y) - (x1 + 1j*y1))
+    elif z.lower() == "times":
+        return complex((x + 1j*y) * (x1 + 1j*y1))
+    elif z.lower() == "division":
+        return complex((x + 1j*y) / (x1 + 1j*y1))
+    else:
+        return None
 
 def main():
     x = int(input("Enter the real part of the equation: "))
@@ -10,18 +28,9 @@ def main():
     x1 = int(input("Enter the second real part of the equation: "))
     y1 = int(input("Enter the second imaginary part of the equation: "))
     z = (input("What kind of operation you want to compute (+,-,*,/)? "))
-    sum = 0
-    minus = 0
-    times = 0
-    division = 0
-    if z.lower() == "sum":
-        print(complex((x + 1j*y) + (x1 + 1j*y1)))
-    elif z.lower() == "minus":
-        print(complex((x + 1j*y) - (x1 + 1j*y1)))
-    elif z.lower() == "times":
-        print(complex((x + 1j*y) * (x1 + 1j*y1)))
-    elif z.lower() == "division":
-        print(complex((x + 1j*y) / (x1 + 1j*y1)))
+    result = perform_operation(x, y, x1, y1, z)
+    if result:
+        print(result)
     else:
         print("Try Again, please.")
         
@@ -38,32 +47,12 @@ def repeat():
         print("Invalid answer.")
         repeat()
 
-main()
-    
-#Time—50%: Did you spend at least three hours on your Python program or test functions during the current lesson? Yes, and the code above was the best I have done until now.
-#Is your program organized into multiple functions? Yes
-#Does each function in your program perform just one task? Yes, after showing the complex equation, the program asks if the user wants to compute again.
-#Did you complete some significant part of your program during the current week? Yes, the code above is the first part of my project.
-#A list of the function names in your program: I used the main function and the repeat function, both with def. 
-#A list of the test function names in your test code: I've used the function below:
-#def test_number():
-#    data = np.arange(8) + 1j*np.arange(2, 10)
-#   x = data.real 
-#    y = data.imag
-#   plt.plot(x, y, '-.r*') 
-#    plt.ylabel('Imaginary') 
-#    plt.xlabel('Real') 
-#    plt.show()  
-#pytest.main(["-v", "--tb=line", "-rN", __file__])
-
-#A list of the documentation that you read, the videos that you watched, and the coding experiments that you tried.
-#https://www.geeksforgeeks.org/complex-numbers-in-python-set-1-introduction/#:~:text=An%20complex%20number%20is%20represented,be%20represented%20by%20imag().
-#https://realpython.com/python-complex-numbers/
-#https://www.tutorialspoint.com/complex-numbers-in-python
-#https://matplotlib.org/stable/plot_types/index.html
-# A description or list of the work that you finished on your program : my program is based on operations with complex numbers.
-# A complex number is followed by a letter, more specifically, the letter j, for example, in the equation: 2 + 3j: 2 is the real number, while
-# 3 is the imaginary number, this happens because j = sqrt(-1).
-
-#In the second part, I'll try to put two complex equations in the same plot.
-#I tried to put two complex equations in the same plot, but, instead of it, I decided to work with math operations (sum, minus, times and division)
+def test_perform_operation():
+    assert perform_operation(1, 2, 3, 4, "sum") == (4 + 6j)
+    assert perform_operation(1, 2, 3, 4, "minus") == (-2 - 2j)
+    assert perform_operation(1, 2, 3, 4, "times") == (-5 + 10j)
+    assert perform_operation(1, 2, 3, 4, "division") == (0.44 + 0.08j)
+    assert perform_operation(1, 2, 3, 4, "invalid") == None
+        
+if __name__  == "__main__":
+    main()
