@@ -4,11 +4,6 @@
 import math
 from datetime import datetime
 
-running = True
-
-print("Welcome to Tire Volume Calculator")
-print("|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|")
-
 def main():
     width = int(input("Enter the width of the tire in mm: "))
     aspect_ratio = int(input("Enter the aspect ratio of the tire: "))
@@ -20,35 +15,43 @@ def main():
     return (width, aspect_ratio, diameter, volume)
 
 def repeat():
-    answer = input("Would you like to compute another volume (Y/N)? ")
-    if answer.upper() == "Y":
-        main()
-    elif answer.upper() == "N":
-        print("The program will now end")
-        exit()
-    else:
-        print("Error: Invalid Argument")
-    
-    
+    while True:
+        answer = input("Would you like to compute another volume (Y/N)? ")
+        if answer.upper() == "Y":
+            main()
+        elif answer.upper() == "N":
+            print("The program will now end")
+            return False
+        else:
+            print("Error: Invalid Argument")
 
-while running:
-    shopping = input("Would you like to buy tires with these dimensions? (yes/no) ")
-    if shopping.lower() == "yes":
-        print("Please enter a phone number, and we will contact you at a later time:")
-        phone_number = input(">> ")
-        print("Have a great day!")
-        loop = False
-    elif shopping.lower() == "no":
-        print("Have a great day!")
-        phone_number = ("")
-        loop = False
-    else:
-        print("Please enter yes or no.")
-
-    width_tire, aspect_tire, diameter_tire, volume = main()
-
+def save_data(width, aspect_ratio, diameter, volume, phone_number):
     current_date_and_time = datetime.now()
 
     with open("tire_volume.txt", "at") as tire_volume:
-        print(f"\n{current_date_and_time}\n{width}, {respective_ratio}, {respective_diameter}, {volume}\n{phone_number}", file=tire_volume)
-main()
+        print(f"{current_date_and_time}\n{width}, {aspect_ratio}, {diameter}, {volume}\n{phone_number}\n", file=tire_volume)
+
+def main_loop():
+    while True:
+        shopping = input("Would you like to buy tires with these dimensions? (yes/no) ")
+        if shopping.lower() == "yes":
+            phone_number = input("Please enter a phone number, and we will contact you at a later time: ")
+            print("Have a great day!")
+            break
+        elif shopping.lower() == "no":
+            phone_number = ""
+            print("Have a great day!")
+            break
+        else:
+            print("Error: Invalid Argument")
+
+    while True:
+        width, aspect_ratio, diameter, volume = main()
+        save_data(width, aspect_ratio, diameter, volume, phone_number)
+        if not repeat():
+            break
+
+if __name__ == "__main__":
+    print("Welcome to Tire Volume Calculator")
+    print("|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|:|")
+    main_loop()
