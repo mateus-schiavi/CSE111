@@ -1,35 +1,60 @@
 import turtle
 
-# create turtle object
+# set up the turtle window
+turtle.setup(600, 600)
+turtle.title("Digivice")
+
+# create a turtle object
 t = turtle.Turtle()
 
-# draw outer circle
+# set the pen size and color
+t.pensize(5)
+t.pencolor("black")
+
+# draw the main digivice shape
 t.penup()
-t.goto(0, -100)
+t.goto(0, -150)
 t.pendown()
-t.circle(100)
+t.circle(150)
 
-# draw inner circle
+# draw the inner circle
 t.penup()
-t.goto(0, -50)
+t.goto(0, -80)
 t.pendown()
-t.circle(50)
+t.circle(80)
 
-# draw four buttons
-for i in range(4):
-    t.penup()
-    t.goto(50 * (i - 1), 0)
-    t.pendown()
-    t.dot(20)
+# draw the triangles
+t.penup()
+t.goto(-70, -30)
+t.pendown()
+t.fillcolor("gray")
+t.begin_fill()
+for i in range(3):
+    t.forward(140)
+    t.left(120)
+t.end_fill()
 
-# draw center button
+t.penup()
+t.goto(-60, -20)
+t.pendown()
+t.fillcolor("white")
+t.begin_fill()
+for i in range(3):
+    t.forward(120)
+    t.left(120)
+t.end_fill()
+
+# draw the center circle
 t.penup()
 t.goto(0, 0)
 t.pendown()
-t.dot(40)
+t.fillcolor("red")
+t.begin_fill()
+t.circle(25)
+t.end_fill()
 
-# hide turtle
+# hide the turtle object
 t.hideturtle()
 
-# keep window open
+# keep the window open until manually closed
 turtle.done()
