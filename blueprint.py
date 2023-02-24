@@ -1,75 +1,70 @@
 import turtle
-
-# set up the turtle screen
-screen = turtle.Screen()
-screen.setup(width=500, height=500)
-
-# create a turtle to draw with
-t = turtle.Turtle()
-
-# set the turtle's speed and color
-t.speed(0)
-t.color("green", "yellow")
-
-# draw the head
-t.begin_fill()
-t.circle(80)
-t.end_fill()
-
-# draw the eyes
-t.penup()
-t.goto(-30, 60)
-t.pendown()
-t.begin_fill()
-t.circle(20)
-t.end_fill()
-t.penup()
-t.goto(30, 60)
-t.pendown()
-t.begin_fill()
-t.circle(20)
-t.end_fill()
-
-# draw the mouth
-t.penup()
-t.goto(-60, 0)
-t.pendown()
-t.right(60)
-t.circle(70, 120)
-
-# draw the body
-t.penup()
-t.goto(0, -100)
-t.pendown()
-t.begin_fill()
-t.circle(100)
-t.end_fill()
-
-# draw the legs
-t.penup()
-t.goto(-70, -180)
-t.pendown()
-t.right(20)
-t.forward(70)
-t.right(90)
-t.forward(20)
-t.penup()
-t.goto(70, -180)
-t.pendown()
-t.left(40)
-t.forward(70)
-t.left(90)
-t.forward(20)
-
-# draw the tail
-t.penup()
-t.goto(70, -280)
-t.pendown()
-t.right(120)
-t.forward(100)
-
-# hide the turtle
-t.hideturtle()
-
-# keep the turtle window open
-turtle.done()
+import math
+import random
+wn = turtle.Screen()
+wn.bgcolor('black')
+Albert = turtle.Turtle()
+Albert.speed(0)
+Albert.color('white')
+rotate=int(360)
+def drawCircles(t,size):
+    for i in range(10):
+        t.circle(size)
+        size=size-4
+def drawSpecial(t,size,repeat):
+  for i in range (repeat):
+    drawCircles(t,size)
+    t.right(360/repeat)
+drawSpecial(Albert,100,10)
+Steve = turtle.Turtle()
+Steve.speed(0)
+Steve.color('yellow')
+rotate=int(90)
+def drawCircles(t,size):
+    for i in range(4):
+        t.circle(size)
+        size=size-10
+def drawSpecial(t,size,repeat):
+    for i in range (repeat):
+        drawCircles(t,size)
+        t.right(360/repeat)
+drawSpecial(Steve,100,10)
+Barry = turtle.Turtle()
+Barry.speed(0)
+Barry.color('blue')
+rotate=int(80)
+def drawCircles(t,size):
+    for i in range(4):
+        t.circle(size)
+        size=size-5
+def drawSpecial(t,size,repeat):
+    for i in range (repeat):
+        drawCircles(t,size)
+        t.right(360/repeat)
+drawSpecial(Barry,100,10)
+Terry = turtle.Turtle()
+Terry.speed(0)
+Terry.color('orange')
+rotate=int(90)
+def drawCircles(t,size):
+    for i in range(4):
+        t.circle(size)
+        size=size-19
+def drawSpecial(t,size,repeat):
+    for i in range (repeat):
+        drawCircles(t,size)
+        t.right(360/repeat)
+drawSpecial(Terry,100,10)
+Will = turtle.Turtle()
+Will.speed(0)
+Will.color('pink')
+rotate=int(90)
+def drawCircles(t,size):
+    for i in range(4):
+        t.circle(size)
+        size=size-20
+def drawSpecial(t,size,repeat):
+    for i in range (repeat):
+        drawCircles(t,size)
+        t.right(360/repeat)
+drawSpecial(Will,100,10)
