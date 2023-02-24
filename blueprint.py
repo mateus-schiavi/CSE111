@@ -1,60 +1,75 @@
 import turtle
 
-# set up the turtle window
-turtle.setup(600, 600)
-turtle.title("Digivice")
+# set up the turtle screen
+screen = turtle.Screen()
+screen.setup(width=500, height=500)
 
-# create a turtle object
+# create a turtle to draw with
 t = turtle.Turtle()
 
-# set the pen size and color
-t.pensize(5)
-t.pencolor("black")
+# set the turtle's speed and color
+t.speed(0)
+t.color("green", "yellow")
 
-# draw the main digivice shape
-t.penup()
-t.goto(0, -150)
-t.pendown()
-t.circle(150)
-
-# draw the inner circle
-t.penup()
-t.goto(0, -80)
-t.pendown()
+# draw the head
+t.begin_fill()
 t.circle(80)
-
-# draw the triangles
-t.penup()
-t.goto(-70, -30)
-t.pendown()
-t.fillcolor("gray")
-t.begin_fill()
-for i in range(3):
-    t.forward(140)
-    t.left(120)
 t.end_fill()
 
+# draw the eyes
 t.penup()
-t.goto(-60, -20)
+t.goto(-30, 60)
 t.pendown()
-t.fillcolor("white")
 t.begin_fill()
-for i in range(3):
-    t.forward(120)
-    t.left(120)
+t.circle(20)
+t.end_fill()
+t.penup()
+t.goto(30, 60)
+t.pendown()
+t.begin_fill()
+t.circle(20)
 t.end_fill()
 
-# draw the center circle
+# draw the mouth
 t.penup()
-t.goto(0, 0)
+t.goto(-60, 0)
 t.pendown()
-t.fillcolor("red")
+t.right(60)
+t.circle(70, 120)
+
+# draw the body
+t.penup()
+t.goto(0, -100)
+t.pendown()
 t.begin_fill()
-t.circle(25)
+t.circle(100)
 t.end_fill()
 
-# hide the turtle object
+# draw the legs
+t.penup()
+t.goto(-70, -180)
+t.pendown()
+t.right(20)
+t.forward(70)
+t.right(90)
+t.forward(20)
+t.penup()
+t.goto(70, -180)
+t.pendown()
+t.left(40)
+t.forward(70)
+t.left(90)
+t.forward(20)
+
+# draw the tail
+t.penup()
+t.goto(70, -280)
+t.pendown()
+t.right(120)
+t.forward(100)
+
+# hide the turtle
 t.hideturtle()
 
-# keep the window open until manually closed
+# keep the turtle window open
 turtle.done()
