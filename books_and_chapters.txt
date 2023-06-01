@@ -2,7 +2,7 @@ Genesis:50:Old Testament
 Exodus:40:Old Testament
 Leviticus:27:Old Testament
 Numbers:36:Old Testament
-Deuteronomy:34:Old Testament
+Deuteronomy:34:Old Testament 
 Joshua:24:Old Testament
 Judges:21:Old Testament
 Ruth:4:Old Testament

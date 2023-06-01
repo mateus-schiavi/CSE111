@@ -1,5 +1,5 @@
 import sympy
-
+ 
 from sympy import (sin, cos, tan, asin, acos, atan, sqrt, symbols, simplify,
                    trigsimp, log, exp, expand, expand_trig, Symbol, rad, deg,
                    sinh, cosh, tanh)

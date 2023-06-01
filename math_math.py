@@ -15,7 +15,7 @@ ax.set_ylabel(u'posição [cm]')
 plt.title(u'Posição da fita vermelha')
 plt.legend()
 
-
+ 
 fig, ax2 = plt.subplots()
 ax2.scatter(t, theta, color="gray", label=u"Ângulo" )
 ax2.set_xlabel('tempo [s]')

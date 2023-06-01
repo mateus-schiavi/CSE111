@@ -14,7 +14,7 @@ def test_number():
 def test_two():
     data = np.arange(6) + 1j*np.arange(-3,3)
     x = data.real 
-    y = data.imag
+    y = data.imag 
     plt.plot(x, y, '-.r*') 
     plt.ylabel('Imaginary') 
     plt.xlabel('Real') 

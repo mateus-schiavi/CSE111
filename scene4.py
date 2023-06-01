@@ -1,7 +1,7 @@
 # Example 3
 
 from draw2d import start_drawing, draw_oval, finish_drawing
-
+ 
 def main():
     # Call the start_drawing function in the draw2d.py
     # library which will open a window and create a canvas.

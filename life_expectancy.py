@@ -14,7 +14,7 @@ number_select_twelvemonth = 0
 chosen_twelvemonth = int(input('Type the year you want to know about: '))
 chosen_lower = 1024
 chosen_higher = 0
-
+ 
 #Variables for the chosen Land
 chosen_land = input('What land(country) you want to know more about? ')
 chosen_landlower = 1024

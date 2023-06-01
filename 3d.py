@@ -3,7 +3,7 @@
 # Calculate and plot charged particle trajectory in homogeneous magnetic field
 # Eq. 1 from Nuclear Instruments and Methods in Physics Research A 566 (2006) 687–698
 # dx.doi.org/10.1016/j.nima.2006.07.032
-
+ 
 import math
 import numpy as np
 import matplotlib.pyplot as plt

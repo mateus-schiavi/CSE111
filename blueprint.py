@@ -1,5 +1,5 @@
 import turtle
-import math
+import math 
 import random
 wn = turtle.Screen()
 wn.bgcolor('black')

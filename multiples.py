@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np 
 import math
 import pytest
-
+ 
 def test_function():
     X = np.arange(0, math.pi*2, 0.05) 
     Y1 = np.sin(X) 

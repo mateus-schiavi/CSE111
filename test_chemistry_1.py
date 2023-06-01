@@ -3,12 +3,12 @@ from chemistry import make_periodic_table, \
 from pytest import approx
 import pytest
 
-
+ 
 # These are the indexes of the
 # elements in the periodic table.
 NAME_INDEX = 0
 ATOMIC_MASS_INDEX = 1
-
+ 
 
 def test_make_periodic_table():
     """Verify that the make_periodic_table function works correctly.

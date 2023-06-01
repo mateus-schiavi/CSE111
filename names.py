@@ -4,7 +4,7 @@ def make_full_name(given_name, family_name):
     """Return a string in this form "family_name; given_name". For
     example, if this function were called like this:
     make_full_name("Sally", "Brown"), it would return "Brown; Sally".
-
+ 
     Parameters
         given_name: a string that contains a person's given name
         family_name: a string that contains a person's family name

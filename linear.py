@@ -10,4 +10,4 @@ def test_number():
     plt.ylabel('Imaginary') 
     plt.xlabel('Real') 
     plt.show()  
-pytest.main(["-v", "--tb=line", "-rN", __file__])
+pytest.main(["-v", "--tb=line", "-rN", __file__]) 

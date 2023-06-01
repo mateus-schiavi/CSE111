@@ -16,7 +16,7 @@ draw.penup()
 draw.forward(190)
 draw.pendown()
 
-# Hair
+# Hair 
 draw.right(25)
 draw.forward(60)
 draw.left(135)

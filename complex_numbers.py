@@ -9,4 +9,4 @@ init_printing(use_latex='png', scale=1.25, order='grlex',
 x = Symbol('x')
 example = (x + 1)**2 + 9
 
-plot(example, axis_center=(0, 0))
+plot(example, axis_center=(0, 0)) 

@@ -12,7 +12,7 @@ people = [
     "Gretchen 54",
     "Noah 12",
     "Penelope 32",
-    "Michael 2",
+    "Michael 2", 
     "Jacob 10"
 ]
 

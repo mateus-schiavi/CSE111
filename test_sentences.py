@@ -8,7 +8,7 @@ def test_get_determiner():
 
     for _ in range(8):
 
-        word = get_determiner(1).lower()
+        word = get_determiner(1).lower() 
 
         assert word in single_determiners
 

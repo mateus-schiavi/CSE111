@@ -11,7 +11,7 @@ while item != "quit":
 print("\nThe shopping list is:")
 for item in shopping_list:
     print(item)
-
+ 
 print("\nThe shopping list with indexes is:")
 for i in range(len(shopping_list)):
     item = shopping_list[i]

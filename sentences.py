@@ -1,5 +1,5 @@
 import random 
-
+ 
 def main():
     tenses = ['past', 'present', 'future']
     quantities = [1, 2]

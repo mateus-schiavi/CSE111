@@ -5,7 +5,7 @@ Author: Mateus Schiavi
 Purpose: Use functions to calculate temperatue.
 """
 
-import math
+import math 
 
 
 def result(V,T,degree):

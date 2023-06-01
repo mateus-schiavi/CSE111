@@ -19,7 +19,7 @@ def take_input(val):
                 chk  = False  # so we can carry on with while loop
             else:
                break
-    return val
+    return val 
 
 
 def  doing_work (v):

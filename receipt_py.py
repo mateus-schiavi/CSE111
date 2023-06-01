@@ -14,7 +14,7 @@ def main():
             
             
             next(reader)
-            
+             
             sub_total = 0
             
             for row in reader:

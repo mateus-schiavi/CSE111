@@ -1,6 +1,6 @@
 import random
 import re
-
+ 
 #make the program select random tense
 tenses = [0,1,2] # present, past, future
 tense = random.choice(tenses)
